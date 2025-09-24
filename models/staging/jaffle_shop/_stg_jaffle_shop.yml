@@ -1,6 +1,6 @@
 models:
   - name: stg_jaffle_shop__customers
-    describption: one unique customer per row
+    description: one unique customer per row
     columns:
      - name: customer_id
        description: Primary key
@@ -11,13 +11,13 @@ models:
   - name: stg_jaffle_shop__orders
     columns:
      - name: order_id
-       describption: id for the order
+       description: id for the order
        data_tests:
          - not_null
          - unique
 
      - name: status
-       describption: '{{ doc("order_status") }}'
+       description: '{{ doc("order_status") }}'
        data_tests:
          - accepted_values:
             arguments:
