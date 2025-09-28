@@ -1,0 +1,13 @@
+version: 2
+
+macros:
+  - name: cents_to_dollars
+    description: |
+      Converts an amount in cents to dollars by dividing by 100. Useful for normalizing currency fields in models where amounts are stored as integer cents.
+    arguments:
+      - name: cents
+        type: number
+        description: The value in cents to be converted to dollars.
+      - name: decimals
+        type: number
+        description: Optional. The number of decimal places to round the result to. Defaults to 2.
