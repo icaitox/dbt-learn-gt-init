@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    database: raw
+    tables:
+      - name: customers
+        description: "This table contains customer data including IDs and demographic information."
+      - name: orders
+        description: "This table contains order data including order IDs, customer IDs, and order details."

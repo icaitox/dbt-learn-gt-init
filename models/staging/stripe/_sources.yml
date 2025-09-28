@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: stripe
+    database: raw
+    tables:
+      - name: payment
+        description: "This table contains payment data from the Stripe API."
+        columns:
+          - name: id
+            description: "Unique identifier for the payment."
+          - name: amount
+            description: "The amount of the payment in cents."
+          - name: currency
+            description: "The currency of the payment."
+          - name: created
+            description: "Timestamp when the payment was created."
+          - name: status
+            description: "The status of the payment (e.g., succeeded, failed)."
