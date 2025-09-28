@@ -9,7 +9,7 @@ with final as (
     amount / 100 as amount,
     created as created_at
 
-from {{ source('stripe', 'payments') }})
+from {{ source('stripe', 'payment') }})
 
 select *
 from final
